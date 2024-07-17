@@ -1,1 +1,1 @@
-In this repo you can find the programs for DAA LAb
+In this repo you can find the programs for DAA Lab
