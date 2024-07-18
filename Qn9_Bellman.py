@@ -66,35 +66,3 @@ bellmanFord(graph,src,V)
 
 
 
-
-
-# def BellmanFord(graph, src, V):
-#     dist = [float('inf')] * V
-#     dist[src] = 0
-
-#     for i in range(V - 1):
-#         for u, v, w in graph:
-#             if dist[u] != float('inf') and dist[u] + w < dist[v]:
-#                 dist[v] = dist[u] + w
-
-#     for u, v, w in graph:
-#         if dist[u] != float('inf') and dist[u] + w < dist[v]:
-#             print("Graph contains negative weight cycle")
-#             return
-
-#     print("\nVertex\tDistance from source")
-#     for i in range(V):
-#         print(f"{i}\t{dist[i]}")
-
-# V = int(input("Enter number of Vertices: "))
-# E = int(input("Enter number of directed edges: "))
-
-# graph = []
-# print("\nEnter adjacency list edges [u, v, weight] separated by space:")
-# for i in range(E):
-#     graph.append(list(map(int, input(f"Edge {i+1}: ").split())))
-
-# src = int(input("\nEnter source vertex: "))
-# print("\nGraph:", graph)
-
-# BellmanFord(graph, src, V)
